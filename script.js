@@ -12,7 +12,6 @@ buttonleft.addEventListener("click", ()=>{
     clienteactual -= 220
 carruselclients.style.marginLeft= `-${clienteactual}px`
 posicionactual --
-console.log(carruselclients.style.marginLeft)
 if (posicionactual < 1) {
     buttonleft.style.visibility= "hidden"
     buttonleftcontainer.style.visibility= "hidden"
@@ -34,7 +33,6 @@ buttonright.addEventListener("click", ()=>{
 carruselclients.style.marginLeft = `-${clienteactual}px`
      clienteactual += 220
      posicionactual++
-     console.log(carruselclients.style.marginLeft)
      if (posicionactual >= clientsfrecuents.length - 2) {
     buttonright.style.visibility= "hidden"
     buttonrightcontainer.style.visibility= "hidden"

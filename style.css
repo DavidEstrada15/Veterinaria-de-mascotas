@@ -6,10 +6,13 @@
 }
 
 body{
-    background-image: url(assets/primerFondoLanding.png);
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+
+.purpleh2{
+    color: rgb(77, 35, 117);
 }
 
 button{
@@ -69,6 +72,7 @@ h1 img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 100vh;
+    background-image: url(assets/primerFondoLanding.png);
 }
 
 .textandpetscontainer{
@@ -97,10 +101,6 @@ h1 img{
 
 .textandpetscontainer h3{
     font-size: 1.9vw;
-}
-
-.centralcontentcontainer{
-    overflow: hidden;
 }
 
 .centralcontentcontainer img{
@@ -155,4 +155,221 @@ place-items: center;
 .clientsfrecuents{
     color: black;
     padding: 5px;
+}
+
+.Servicescontainer{
+    background-image: linear-gradient(90deg,rgba(137, 126, 237, 1) 0%, rgba(255, 255, 255, 1) 55%, rgba(97, 97, 87, 1) 100%);
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Serviceindividual img{
+    width: 60px;
+    height: 60px;
+}
+
+.Services{
+    display: flex;
+    flex-direction: row;
+    gap: 300px;
+}
+
+#dog{
+    background-color: rgb(70, 133, 70);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#Health{
+    background-color: rgb(214, 214, 65);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#Healthfortheanimals{
+    background-color: pink;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.animalshealths{
+    padding: 50px;
+}
+
+.Serviceindividual{
+    display: flex;
+gap: 5px;
+}
+
+.Serviceindividual div{
+    display: flex;
+    flex-direction: column;
+}
+
+.Serviceindividual div p{
+    width: 100%;
+}
+
+.animalsgrid{
+    display: grid;
+    grid-template-areas: 
+    "loros perros Gato"
+    "puggle perros Gato"
+    "puggle perrosydueños Gatopersa";
+    gap: 10px;
+}
+
+#loros{
+    grid-area: loros;
+    width: 400px;
+    height: 200px;
+
+}
+
+#perrosdorados{
+    grid-area:perros;
+    width: 500px;
+    height: 300px;
+}
+
+#Pugglecongorro{
+    grid-area: puggle;
+    width: 400px;
+    height: 400px;
+}
+
+#perrocondueños{
+    grid-area: perrosydueños;
+    width: 500px;
+    height: 300px;
+}
+
+#Gatoenmanos{
+    grid-area: Gato;
+    width: 400px;
+    height: 300px;
+}
+
+#Gatopersa{
+    grid-area: Gatopersa;
+width: 300px;
+height: 300px;
+}
+
+.About article{
+    display: flex;
+}
+
+.About article a{
+    color: orange;
+}
+
+.Formsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.Formsection form{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.Formsection form button{
+    place-self: center;
+    padding: 10px 20px;
+    background-color: greenyellow;
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+}
+
+.Formsection form input{
+    place-self: center;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: aliceblue;
+}
+
+footer{
+    background-color: blueviolet;
+}
+
+.Formsection form{
+    background-color: blueviolet;
+}
+
+.Formsection div #PerroFormulario{
+    width: 500px;
+    position: relative;
+    opacity: 0.5;
+    right: 8vw;
+    bottom: -1vw;
+    z-index: 0;
+}
+
+#GatoFormulario{
+    width: 300px;
+    position: relative;
+    opacity: 0.5;
+    left: 1vw;
+    top: 5vw;
+    z-index: 0;
+}
+
+footer{
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Footerprincipal{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div h2{
+    display: flex;
+    color: white;
+    gap: 5px;
+}
+
+footer div h2 img{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(130, 206, 82);
+    border-radius: 20px;
+}
+
+.Terms{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    color: white;
+}
+
+.socialreds{
+    display: flex;
+    gap: 20px;
+}
+
+.socialreds svg{
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+footer h4{
+    color: white;
+    place-self: center;
 }
