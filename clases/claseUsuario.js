@@ -3,7 +3,11 @@ class Usuario {
         this.nombre= usuario.nombre,
         this.correo= usuario.correo,
         this.password= usuario.password,
-        this.telefono = usuario.telefono | "No ingreso"
+        this.telefono = usuario.telefono
+    }
+
+    getUserinfo() {
+        return `${this.nombre}, ${this.correo}, ${this.password}, ${this.telefono}`
     }
 }
 

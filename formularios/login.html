@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <script type="module" defer src="../SistemadeLogin.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="formcontainer" class="formcontainer">
+            <h2>Pon tus datos</h2>
+
+            <form id="Ingresarcuenta" class="Crearcuenta">
+                <label for="password">Contraseña</label>
+                <input required minlength="5" id="password" name="password" type="password">
+                <label for="email">Email</label>
+                <input required name="email" id="email" type="email">
+                <button>Ingresar datos</button>
+            </form>
+            <div class="redirectoformulario">
+                <h2>No tienes cuenta ?, presiona aqui para registrarte</h2>
+                <button><a href="register.html">Crear cuenta</a></button>
+            </div>
+            <p class="textoenlinea">-----------o------------</p>
+            <div class="redirectoallanding">
+                <h3>Vuelve a ver nuestros servicios</h3>
+                <button><a href="../index.html">Regresa a la pagina principal</a></button>
+            </div>
+        </section>
+        <section class="detailsofregister">
+            <h1>Inicia sesion en tu cuenta</h1>
+            <p>Hola, Bienvenido de vuelta usuario !,
+                esperamos que tu estadia sea comoda
+            </p>
+        </section>
+    </main>
+</body>
+</html>

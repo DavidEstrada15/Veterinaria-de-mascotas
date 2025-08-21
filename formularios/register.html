@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <script type="module" defer src="Crearcuenta.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="detailsofregister">
+            <h1>Crea tu cuenta</h1>
+            <p>Ingresa tus datos para darle el mejor 
+                trato a tu mascota
+            </p>
+        </section>
+        <section class="formcontainer">
+            <h2>Pon tus datos</h2>
+
+            <form id="Crearcuenta" class="Crearcuenta">
+                <label for="Username">Nombre de Usuario</label>
+                <input required name="Username" id="Username" type="text">
+                <label for="password">Contraseña</label>
+                <input required minlength="5" name="password" type="password">
+                <label for="email">Email</label>
+                <input required name="email" id="email" type="email">
+                <label for="Numero">Numero de telefono</label>
+                <input required name="Numero" id="Numero" type="number">
+                <button>Ingresar datos</button>
+            </form>
+            <p class="textoenlinea">-----------o------------</p>
+            <div class="redirectoformulario">
+                <h2>Ya tienes cuenta ?, presiona aqui para iniciar sesion</h2>
+                <button><a href="login.html">iniciar sesion</a></button>
+            </div>
+            <div class="redirectoallanding">
+                <h3>Vuelve a ver nuestros servicios</h3>
+                <button><a href="../index.html">Regresa a la pagina principal</a></button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

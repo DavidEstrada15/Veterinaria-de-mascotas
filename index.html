@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/pngtree-animal-paw-print-icon-png-image_1794752-removebg-preview.png" type="image/x-icon">
     <script type="module" defer src="Carrusel.js"></script>
-    <script type="module" defer src="clases/claseUsuario.js"></script>
-    <script type="module"  defer src="SistemadeLogin.js"></script>
 </head>
 <body>
     <header class="Encabezadopaginainicial">
@@ -21,9 +19,9 @@
                 <li><a href="">Amigos</a></li>
                 <li><a href="">Acerca de nosotros</a></li>
                 <li><a href="">Contacto</a></li>
-                <li><button>Iniciar sesion</button></li>
+                <li><button><a href="formularios/login.html">Iniciar sesion</a></button></li>
                 <li>|</li>
-                <li><button>Crear Cuenta</button></li>
+                <li><button><a href="formularios/register.html">Crear cuenta</a></button></li>
             </ul>
         </nav>
     </header>
@@ -132,17 +130,12 @@
     </aside>
     <section class="Formsection">
         <div><img id="PerroFormulario" src="assets/Perro formulario.png" alt=""></div>
-        <form id="Crearcuenta">
-            <h2>estas interesado ?</h2>
+        <article id="formentry"><h2>estas interesado ?</h2>
             <p>Ingresa tu informacion para crear tu Cuenta,
                 para agendar tu cita.
             </p>
-            <input name="nombre" required placeholder="Nombre" type="text">
-            <input name="correo" required placeholder="E-mail" type="email">
-            <input name="password" required minlength="5" placeholder="Contraseña" type="password">
-            <input name="telefono" placeholder="Numero telefonico" type="number">
-            <button>Crear Cuenta</button>
-        </form>
+            <button id="redirectoform"><a href="formularios/register.html">Inicia con nosotros</a></button></article>
+            
         <div><img id="GatoFormulario" src="assets/Gato formulario.png" alt=""></div>
     </section>
     <footer>

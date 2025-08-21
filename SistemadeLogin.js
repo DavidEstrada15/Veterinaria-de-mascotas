@@ -1,20 +1,4 @@
-import Usuario from "./clases/claseUsuario.js"
+const Ingresarcuenta = document.getElementById("Ingresarcuenta")
 
-const Crearcuenta = document.getElementById("Crearcuenta")
-const isloggin= localStorage.getItem("Loggin")
-
-Crearcuenta.addEventListener("submit", ()=>{
-  const newusuario= {
-    nombre: Crearcuenta.nombre.value,
-    correo: Crearcuenta.correo.value,
-    password: Crearcuenta.password.value,
-    telefono: Crearcuenta.telefono.value
-  }  
-
-  new Usuario(newusuario)
-  location.reload()
+Ingresarcuenta.addEventListener("submit", ()=>{
 })
-
-if (isloggin == true) {
-    
-}
