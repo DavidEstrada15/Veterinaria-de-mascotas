@@ -5,3 +5,5 @@ class Consulta {
         this.Motivo= Consulta.Motivo
     }
 }
+
+export default Consulta

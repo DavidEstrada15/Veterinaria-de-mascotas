@@ -9,6 +9,7 @@ Crearcuenta.addEventListener("submit", ()=>{
     telefono: Crearcuenta.telefono.value
   }  
 
-  new Usuario(newusuario)
+  localStorage.setItem("Usuariosingresados", JSON.stringify(new Usuario(newusuario)))
+  localStorage.setItem("logginveterinaria", JSON.stringify(true))
   location.reload()
 })

@@ -11,3 +11,5 @@ class Animales {
         return `${this.nombre}, ${this.especie}, ${this.Edad}, ${this.Genero}, ${this.image}`
     }
 }
+
+export default Animales

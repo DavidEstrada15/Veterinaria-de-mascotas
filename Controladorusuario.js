@@ -3,3 +3,5 @@ class Controladorusuario {
         
     }
 }
+
+export default Controladorusuario
