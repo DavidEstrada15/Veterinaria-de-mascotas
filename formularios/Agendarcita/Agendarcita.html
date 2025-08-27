@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda tu cita</title>
+    <link rel="stylesheet" href="Agendarcita.css">
+    <script defer type="module" src="Agendarcita.js"></script>
+</head>
+<body>
+    <main>
+        <section class="formcontainer">
+            <form id="formanimalyconsulta" name="formanimalyconsulta">
+                <label for="Fecha">Fecha de la cita</label>
+                <input required name="fecha" id="Fecha" placeholder="Fecha de la cita" type="date">
+                <label for="Hora">Hora de la cita</label>
+                <input required name="hora" id="Hora" placeholder="Hora de la cita" type="time">
+                <label for="Motivo">Motivo de la cita</label>
+                <input required name="motivo" id="Motivo" type="text">
+                <label for="Name">Nombre de la mascota</label>
+                <input required name="name" id="Name" type="text">
+                <label for="Especie">Especie de la mascota</label>
+                <input required name="especie" id="Especie" type="text">
+                <label for="Edad">Edad de la mascota</label>
+                <input required name="edad" id="Edad" min="0" max="30" type="number">
+                <label for="Genero">Genero de la mascota</label>
+                <select required name="genero" id="Genero">
+                    <option selected disabled  value=""></option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+                <label for="Imagen">Imagen de la mascota (Opcional)</label>
+                <input name="image" id="Imagen" type="text">
+                <button type="submit"> Agendar cita</button>
+            </form>
+        </section>
+        <section id="Citas" class="Citas">
+
+        </section>
+
+        <section id="Modal"></section>
+    </main>
+</body>
+</html>

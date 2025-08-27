@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/pngtree-animal-paw-print-icon-png-image_1794752-removebg-preview.png" type="image/x-icon">
     <script type="module" defer src="Carrusel.js"></script>
+    <script type="module" defer src="logginornot.js"></script>
 </head>
 <body>
     <header class="Encabezadopaginainicial">
@@ -19,9 +20,9 @@
                 <li><a href="">Amigos</a></li>
                 <li><a href="">Acerca de nosotros</a></li>
                 <li><a href="">Contacto</a></li>
-                <li><button><a href="formularios/login.html">Iniciar sesion</a></button></li>
+                <li id="button1"><button><a href="formularios/login.html">Iniciar sesion</a></button></li>
                 <li>|</li>
-                <li><button><a href="formularios/register.html">Crear cuenta</a></button></li>
+                <li id="button2"><button><a href="formularios/register.html">Crear cuenta</a></button></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +33,7 @@
         <h3>Agenda una cita en menos de un minuto.</h3>
         
     </article>
-    <button>Agendar cita</button>
+    <button><a id="redirecttoregisteroragend" href="formularios/register.html">Agendar cita</a></button>
     <article class="Petscontainer">
         <h3>Clientes frecuentes</h3>
         <section class="Clients">
@@ -131,10 +132,10 @@
     <section class="Formsection">
         <div><img id="PerroFormulario" src="assets/Perro formulario.png" alt=""></div>
         <article id="formentry"><h2>estas interesado ?</h2>
-            <p>Ingresa tu informacion para crear tu Cuenta,
+            <p id="textformulario">Ingresa tu informacion para crear tu Cuenta,
                 para agendar tu cita.
             </p>
-            <button id="redirectoform"><a href="formularios/register.html">Inicia con nosotros</a></button></article>
+            <button id="redirectoform"><a id="redirectoaformulariooaagendar" href="formularios/register.html">Inicia con nosotros</a></button></article>
             
         <div><img id="GatoFormulario" src="assets/Gato formulario.png" alt=""></div>
     </section>

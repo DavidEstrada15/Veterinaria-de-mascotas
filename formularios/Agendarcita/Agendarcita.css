@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: orange;
+    min-height: 100vh;
+    display: flex;
+    place-content: center;
+}
+
+main{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.formcontainer{
+    display: flex;
+    background-color: #f38200;
+    padding: 65px 70px;
+    height: 80%;
+    place-self: center;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.formcontainer form{
+    display: flex;
+    place-self: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formcontainer form input{
+    place-self: center;
+    padding: 2px 5px;
+}
+
+.formcontainer form select{
+    padding: 2px 5px;
+}
+
+.formcontainer form button{
+    place-self: center;
+    padding: 5px 10px;
+}
+
+.Citas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.Citas article{
+    border:  2px solid gray;
+    place-self: center;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.Citas article img{
+    width: 100px;
+    height: 100px;
+}
+
+#Modal{
+    position: absolute;
+    place-self: center;
+    background-color: aqua;
+    display: flex;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#Modal article{
+    display: flex;
+    place-self: center;
+    place-content: center;
+    flex-direction: column;
+    padding: 5vw 5vh;
+}
+
+
+#Modal article div{
+    position: absolute;
+    left: 100%;
+    bottom: 100%;
+}
+
+#Modal article div svg{
+    color: red;
+    cursor: pointer;
+}
+
+@keyframes aparecer {
+    0%{
+        opacity: 0.0;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}
+
+@keyframes desaparecer {
+    0%{
+        opacity: 1.0;
+    }
+    100%{
+        opacity: 0.0;
+        display: none;
+    }
+}
