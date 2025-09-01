@@ -11,6 +11,25 @@ class Animales {
     getAnimalInfo(){
         return `${this.nombre}, ${this.especie}, ${this.edad}, ${this.genero}, ${this.image}`
     }
+
+    returnespecie(){
+        return this.especie
+    }
+    returnnombre(){
+        return this.nombre
+    }
+
+    returnedad(){
+        return this.edad
+    }
+
+    returngenero(){
+        return this.genero
+    }
+
+    returnimage(){
+        return this.image
+    }
 }
 
 export default Animales

@@ -7,8 +7,23 @@ class Consulta {
         this.Mascota= Consulta.Mascota
     }
 
+    returnconsultaid(){
+        return this.id
+    }
     returnconsulta() {
         return `${this.Motivo} - ${this.Mascota?.nombre} - ${this.Fecha} - ${this.Hora}`
+    }
+    returnFecha(){
+        return this.Fecha
+    }
+    returnHora(){
+        return this.Hora
+    }
+    returnMotivo(){
+        return this.Motivo
+    }
+    returnMascota(){
+        return this.Mascota
     }
 }
 
